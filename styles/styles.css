@@ -32,6 +32,7 @@ header button:hover {
     background: #162542;
     cursor: pointer;
     transition: 0.7s;
+    color: white;
 }
 
 /* ----------------- MAIN ---------------- */
@@ -143,7 +144,7 @@ main {
     bottom: 0;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    background: rgba(241, 103, 24, 0.75);
+    background: rgba(241, 103, 24, 0.7);
 }
 
 .keybord_right {
@@ -194,10 +195,8 @@ main {
     padding: 0 24px;
     margin-top: 111px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
-    max-width: 1440px;
     gap: 64px;
 }
 
@@ -257,6 +256,123 @@ footer p {
 
 footer span {
     font-weight: 700;
+}
+
+
+
+/* --------------------- RESPONSIVE ---------------- */
+
+/* TABLET */
+
+@media (min-width: 768px)
+{
+    /* HEADER */
+
+    header {
+        margin-top: 49px;
+        padding: 0 39px;
+    }
+
+    header button {
+        width: 175px;
+        height: 58px;
+    }
+
+    /* MAIN */
+
+    main {
+        margin-top: 62px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro {
+        padding-left: 39px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .intro_button {
+        padding: 16px 27px;
+    }
+
+    .intro_img {
+        background-image: url(../assets/tablet/image-keyboard.jpg);
+        width: 321px;
+        height: 425px;
+    }
+
+    .middle {
+        margin-top: 40px;
+        padding: 0 39px;
+        align-items: center;
+        gap: 72px;
+    }
+
+    .middle_images {
+        gap: 50.5px;
+    }
+
+    .keybord_left {
+        background-image: url(../assets/tablet/image-phone-and-keyboard.jpg);
+        width: 214px;
+        height: 320px;
+        border-radius: 20px;
+        position: relative;
+        right: 0;
+    }
+
+    .keybord_left::before {
+        border-radius: 20px;
+    }
+
+    .keybord_right {
+        background-image: url(../assets/tablet/image-glass-and-keyboard.jpg);
+        width: 445px;
+        height: 320px;
+    }
+
+    .middle_info {
+        flex-direction: row;
+        justify-content: space-between;
+        /* gap: 72px; */
+        max-width: 689px;
+    }
+
+    .middle_info_heading, .middle_info_paragraph {
+        text-align: left;
+    }
+
+    .middle_info_paragraph {
+        max-width: 43ch;
+    }
+
+    .last {
+        max-width: 768px;
+        margin-top: 142px;
+    }
+
+    .last_section {
+        align-items: flex-start;
+    }
+
+    .section_header, .section_paragraph {
+        text-align: left;
+    }
+
+    .section_header {
+        max-width: 13ch;
+        margin-top: 40px;
+    }
+
+    /* FOOTER */
+
+    footer {
+        margin-top: 142px;
+    }
 }
 
 
