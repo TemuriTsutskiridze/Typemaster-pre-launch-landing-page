@@ -436,7 +436,7 @@ footer span {
     body {
         background-image: url(../assets/shared/pattern-square.svg), url(../assets/shared/pattern-square.svg);
         background-size: 255px 236px;
-        background-position: top 0px right -30px, top 0px left -40px;
+        background-position: top 205px right -135px, top 970px left -135px;
         background-repeat: no-repeat, no-repeat;
     }
 
